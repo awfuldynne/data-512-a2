@@ -2,7 +2,7 @@
 
 Sean Miller (<millsea0@u.washington.edu>) 10-30-2017
 
-#### Overview
+### Overview
 
 This repository outlines performing an analysis of bias in the coverage of politicians on the English Wikipedia by combining three data sets. We leverage a data set scraped from Wikipedia of collected articles tagged with "Category:Politicians by nationality" and their respective country, a data set of population per country as of mid-2015 and the Wikipedia [**ORES API**](https://www.mediawiki.org/wiki/ORES) to gather information on page quality for each of the articles in the first data set. The **ORES API** returns a class of article within a subset of the [Grade](https://en.wikipedia.org/wiki/Wikipedia:WikiProject_assessment) chart.
 
@@ -11,7 +11,7 @@ We will evaluate two metrics to analyze how Wikipedia might show bias in the cov
 1. The percent of articles-per-poulation for each country
 2. The percent of high quality articles for each country
 
-#### Analysis
+### Analysis
 
 First let us look at the metric for percent of articles-per-population for each country. From my own intuition, I had assumed that at least one country would have the equivalent of one percent of its population in articles about politicians, especially those with smaller populations but the largest percentage achieved was less than half of that (0.48% for Nauru - Population 10,860). Since we are looking at articles from the English Wikipedia, I would expect that this metric is quite biased against countries with large populations where the native language is not English. We can see that the top three countries with the lowest percent of articles-per-population match this criteria and are the countries with the three largest populations that are not the United States. This analysis would benefit from having an additional column for national language so we could see how this metric performs between countries that speak English and those that do not.
 
@@ -19,7 +19,7 @@ The second metric, the percent of high quality articles for each country measure
 
 While I've suggested additional data points that could improve our ability to detect bias within the English Wikipedia on the coverage of politicians, I think that expanding the number of categories we look for within the English Wikipedia would provide us with a larger dataset of articles to work with. It's possible that for countries that do not speak English as their national language that they are also less likely to interact with the English Wikipedia and learn the ins and outs of its category  system. Perhaps there is a group of categories that would perform better than the single category of "Category:Politicians by nationality". To have a better context of the steps necessary to create a Wikipedia article, I feel that it would be helpful to learn to edit Wikipedia articles myself.
 
-#### Example Output
+### Example Output
 
 **Top 10 Countries - Percent of Articles that are High Quality**
 
@@ -36,7 +36,7 @@ While I've suggested additional data points that could improve our ability to de
 | Ireland | 0.081365 |
 | United States | 0.078324 |
 
-#### License(s)
+### License(s)
 
 Data retrieved from the ORES webservice [(Wikimedia API)](https://wikimediafoundation.org/wiki/Terms_of_Use/en) is licensed under [CC-BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/).
 
@@ -44,11 +44,11 @@ Data retrieved from the ORES webservice [(Wikimedia API)](https://wikimediafound
 
 It is unclear as to the license for the [Country Population Mid-2015](http://www.prb.org/DataFinder/Topic/Rankings.aspx?ind=14) data set from the website itself.
 
-#### Libraries
+### Libraries
 
 All of the following code was written and tested against the default packages present in **Anaconda3 v4.4.0**. You can find a download for Anaconda and its latest versions at <https://repo.continuum.io/archive/>.
 
-#### APIs
+### APIs
 
 To retrieve data on Wikipedia page quality, Wikimedia provides the **ORES API** which is machine learning as a service. From this service we are able to leverage the *wp10* model which "...predicts the assessment class of an article"[1]. As part of the [Wikimedia Foundation Terms of Use](https://www.mediawiki.org/wiki/REST_API) you are asked to limit requests to the API to fewer than 200/sec and to set a User-Agent field in the header.
 
