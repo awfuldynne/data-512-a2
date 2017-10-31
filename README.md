@@ -24,7 +24,7 @@ While I've suggested additional data points that could improve our ability to de
 **Top 10 Countries - Percent of Articles that are High Quality**
 
 | Country | Percent of High Quality Articles |
-| ------------------------------------------ |
+| ---------|-------------------------------- |
 | Korea, North | 0.230769 |
 | Romania | 0.129310 |
 | Saudi Arabia | 0.126050 |
@@ -60,7 +60,7 @@ headers = {"User-Agent" : "https://github.com/awfuldynne", "From" : "millsea0@uw
 ###### Links to API Documentation
 
 | API | URL | Documentation | License |
-|--------------------------------|
+|---- |----- | ------------- | -------|
 | Wikipedia ORES | [ORES](https://www.mediawiki.org/wiki/ORES) | [ORES Swagger](https://ores.wikimedia.org/v3/#!/scoring/get_v3_scores_context_revid_model) | [CC-BY-SA 3.0](https://wikimediafoundation.org/wiki/Terms_of_Use/en#7._Licensing_of_Content) |
 
 ###### Structure of Repo
@@ -80,21 +80,21 @@ data-512-a2
 **Raw Data Files**
 
 | API | File Name | URL | Documentation | License |
-|--------------------------------|
+|-----| ----------| ----| ----- | ----|
 | EN-Wikipedia Articles On Politicians | page_data.csv | [Figshare](https://figshare.com/articles/Untitled_Item/5513449) | Same as URL | [CC-BY-SA 4.0](https://figshare.com/articles/Untitled_Item/5513449) |
 | Country Population Data (Mid-2015) | Population Mid-2015.csv | [Population Research Bureau website](http://www.prb.org/DataFinder/Topic/Rankings.aspx?ind=14) | Same as URL | No reference |
 
 *Structure of raw_data/article_quality_data.csv*
 
 | Column | Value |
-|-----------------------|
+|----------| ------------|
 | rev_id | Integer ID that maps to the given Wikipedia page's last edit |
 | article_quality | Quality of the Article as determined by ORES |
 
 *Structure of raw_data/page_data.csv*
 
 | Column | Value |
-|-----------------------|
+|---------|-------------|
 | page | Name of the Wikipedia article |
 | country | Name of the country the article belongs to |
 | rev_id | Integer ID that maps to the given Wikipedia page's last edit |
@@ -102,7 +102,7 @@ data-512-a2
 *Structure of raw_data/Population Mid-2015.csv*
 
 | Column | Value |
-|-----------------------|
+|--------|--------------|
 | Location | Name of the country |
 | Location Type | Type of Location the Location column maps to |
 | TimeFrame | Label of when this data was snapshot |
@@ -115,7 +115,7 @@ data-512-a2
 *Structure of clean_data/en-wikipedia_politician_article_quality.csv*
 
 | Column | Value |
-|-----------------------|
+|--------|--------------|
 | country | Name of the country the article belongs to |
 | article_name | Name of the Wikipedia article |
 | revision_id | Integer ID that maps to the given Wikipedia page's last edit |
