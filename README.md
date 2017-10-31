@@ -36,6 +36,8 @@ While I've suggested additional data points that could improve our ability to de
 | Ireland | 8.1365 |
 | United States | 7.8324 |
 
+---
+
 ### License(s)
 
 Data retrieved from the ORES webservice [(Wikimedia API)](https://wikimediafoundation.org/wiki/Terms_of_Use/en) is licensed under [CC-BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/).
@@ -62,6 +64,8 @@ headers = {"User-Agent" : "https://github.com/awfuldynne", "From" : "millsea0@uw
 | API | URL | Documentation | License |
 |---- |----- | ------------- | -------|
 | Wikipedia ORES | [ORES](https://www.mediawiki.org/wiki/ORES) | [ORES Swagger](https://ores.wikimedia.org/v3/#!/scoring/get_v3_scores_context_revid_model) | [CC-BY-SA 3.0](https://wikimediafoundation.org/wiki/Terms_of_Use/en#7._Licensing_of_Content) |
+
+---
 
 ###### Structure of Repo
 ```
