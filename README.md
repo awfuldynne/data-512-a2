@@ -25,16 +25,16 @@ While I've suggested additional data points that could improve our ability to de
 
 | Country | Percent of High Quality Articles |
 | ---------|-------------------------------- |
-| Korea, North | 0.230769 |
-| Romania | 0.129310 |
-| Saudi Arabia | 0.126050 |
-| Central African Republic | 0.117647 |
-| Qatar | 0.098039 |
-| Guinea-Bissau | 0.095238 |
-| Vietnam | 0.094241 |
-| Bhutan | 0.090909 |
-| Ireland | 0.081365 |
-| United States | 0.078324 |
+| Korea, North | 23.0769 |
+| Romania | 12.9310 |
+| Saudi Arabia | 12.6050 |
+| Central African Republic | 11.7647 |
+| Qatar | 9.8039 |
+| Guinea-Bissau | 9.5238 |
+| Vietnam | 9.4241 |
+| Bhutan | 9.0909 |
+| Ireland | 8.1365 |
+| United States | 7.8324 |
 
 ### License(s)
 
